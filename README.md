@@ -1,12 +1,62 @@
-# React + Vite
+# Prueba Técnica AgriCapital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web para mostrar y filtrar productos agrícolas, desarrollada como parte de la prueba técnica para AgriCapital.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Listado de productos agrícolas
+- Filtrado por categoría
+- Búsqueda por nombre en tiempo real
+- Vista detallada de productos con modal
+- Cálculo de descuentos basado en cantidad
+- Diseño responsivo para móviles y escritorio
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React con Vite
+- **Backend**: Javascript
+- **Estilos**: CSS puro
+
+## Estructura del Proyecto
+
+/
+├── public/              # Archivos estáticos
+│   └── assets/          # Imágenes de productos
+├── src/                 # Código fuente frontend
+│   ├── components/      # Componentes React
+│   │   ├── ProductCard.jsx  # Tarjeta de producto
+│   │   └── ProductModal.jsx # Modal de detalle
+│   ├── App.css          # Estilos de la aplicación
+│   ├── App.jsx          # Componente principal
+└── README.md            # Documentación
+
+## Instalación y Ejecución
+
+Instala las dependencias
+
+npm install
+
+## Inicia la aplicación frontend
+
+npm run dev
+
+
+
+
+## Mejoras Futuras
+
+Con más tiempo, se podrían implementar las siguientes mejoras:
+ademas de poder implementar la API correctamente corrigiendo errores de dispositivo 
+logrando instalar librerias
+
+1. **Integración de Base de Datos**:
+   - Reemplazar datos en memoria con PostgreSQL o MongoDB
+   - Añadir operaciones CRUD para gestión de productos
+
+2. **Autenticación**:
+   - Añadir autenticación de usuarios para funciones de administrador
+   - Implementar control de acceso basado en roles
+
+3. **Soporte Docker**:
+   - Añadir Dockerfile y docker-compose.yml para containerización
+   - Incluir servicio de base de datos en la configuración docker-compose
